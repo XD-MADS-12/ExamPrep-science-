@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Exam Preparation Dashboard</h1>
+        <button id="logout-btn">Logout</button>
+    </header>
+    <main>
+        <div class="content">
+            <h2>Hello, <span id="user-email"></span></h2>
+            <p>Select a subject to start preparation:</p>
+            <div class="cards">
+                <div class="card" onclick="showChapters('Physics')">পদার্থবিজ্ঞান</div>
+                <div class="card" onclick="showChapters('Chemistry')">রসায়ন</div>
+                <div class="card" onclick="showChapters('Biology')">জীববিজ্ঞান</div>
+                <div class="card" onclick="showChapters('Math')">গণিত</div>
+                <div class="card" onclick="showChapters('AdvancedMath')">উচ্চতর গণিত</div>
+                <div class="card" onclick="showChapters('Bangla')">বাংলা</div>
+                <div class="card" onclick="showChapters('BangladeshAndWorld')">বাংলাদেশ ও বিশ্বপরিচয়</div>
+                <div class="card" onclick="showChapters('ICT')">আইসিটি</div>
+                <div class="card" onclick="showChapters('Islam')">ইসলাম ও নৈতিক শিক্ষা</div>
+            </div>
+            <div id="chapter-list"></div>
+            <div id="questionnaire"></div>
+            <div id="timer"></div>
+        </div>
+    </main>
+    <script src="dashboard.js"></script>
+</body>
+</html>
